@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/space.jpg) center/cover no-repeat;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* sun  */
+.sun-container {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun-container > img {
+  border-radius: 80%;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+/* neptune  */
+.neptune-cotainer {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.neptune-cotainer > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 80%;
+  animation: neptune-rotation 53954ms linear infinite;
+}
+
+@keyframes neptune-rotation {
+  0% {
+    transform: rotate(0deg) translate(300px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(300px) rotate(360deg);
+  }
+}
+
+/* uranus rotation */
+
+.uranus-cotainer {
+  position: absolute;
+  height: 530px;
+  width: 530px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.uranus-cotainer > img {
+  height: 65px;
+  width: 65px;
+  border-radius: 65%;
+  animation: uranus-rotation 37054ms linear infinite;
+}
+
+@keyframes uranus-rotation {
+  0% {
+    transform: rotate(0deg) translate(265px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(265px) rotate(360deg);
+  }
+}
+
+/* satrun rotation */
+.satrun-cotainer {
+  position: absolute;
+  height: 470px;
+  width: 470px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.satrun-cotainer > img {
+  height: 60px;
+  width: 60px;
+  border-radius: 60%;
+  animation: satrun-rotation 33218ms linear infinite;
+}
+
+@keyframes satrun-rotation {
+  0% {
+    transform: rotate(0deg) translate(235px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(235px) rotate(360deg);
+  }
+}
+
+/* jupiter rotation */
+.jupiter-cotainer {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.jupiter-cotainer > img {
+  height: 55px;
+  width: 55px;
+  border-radius: 60%;
+  animation: jupiter-rotation 27339ms linear infinite;
+}
+
+@keyframes jupiter-rotation {
+  0% {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(200px) rotate(360deg);
+  }
+}
+/* mars rotation */
+.mars-cotainer {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.mars-cotainer > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 55%;
+  animation: mars-rotation 12684ms linear infinite;
+}
+
+@keyframes mars-rotation {
+  0% {
+    transform: rotate(0deg) translate(175px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(175px) rotate(360deg);
+  }
+}
+/* earth rotation */
+.earth-cotainer {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.earth-cotainer > img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  animation: earth-rotation 11079ms linear infinite;
+}
+
+@keyframes earth-rotation {
+  0% {
+    transform: rotate(0deg) translate(150px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(150px) rotate(360deg);
+  }
+}
+/* venus rotation */
+.venus-cotainer {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.venus-cotainer > img {
+  height: 45px;
+  width: 45px;
+  border-radius: 45%;
+  animation: venus-rotation 7259ms linear infinite;
+}
+
+@keyframes venus-rotation {
+  0% {
+    transform: rotate(0deg) translate(125px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(125px) rotate(360deg);
+  }
+}
+/* mercury rotation */
+.mercury-cotainer {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.mercury-cotainer > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 40%;
+  animation: mercury-rotation 5768ms linear infinite;
+}
+
+@keyframes mercury-rotation {
+  0% {
+    transform: rotate(0deg) translate(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(100px) rotate(360deg);
+  }
+}
